@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Survey Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to get to know eachother</p>
+
+    <form  id="survey-form">
+      <label id="name-label" for="name">Name</label><br>
+      <input type="text" id="name" name="name" required placeholder="Enter your name"><br>
+      <label id="email-label" for="email">Email</label><br>
+      <input type="email" id="email" name="email" required placeholder="Enter your email"><br>
+      <label id="number-label" for="age">Age (optional)</label><br>
+      <input type="number" id="number" name="age" min="0" max="99" placeholder="Age"><br>
+      <p>Which option best describes your current role?</p>
+      <select name ="dropdown" id="dropdown">
+           <option value ="Select current role" selected>Select current role</option>
+           <option value ="Student">Student</option>
+           <option value ="Full Time Job">Full Time Job</option>
+           <option value ="Other">Other</option>
+      </select><br>
+      <p>What is your gender?</p>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br>
+      <p>How do you keep up your coding?</p>
+      <input type="checkbox" id="videos" name="videos" value="Videos">
+      <label for="videos">Videos</label><br>
+      <input type="checkbox" id="tutorials" name="tutorials" value="Tutorials">
+      <label for="tutorials">Tutorials</label><br>
+      <input type="checkbox" id="bootcamps" name="bootcamps" value="Bootcamps">
+      <label for="bootcamps">Bootcamps</label><br>
+      <input type="checkbox" id="other" name="other" value="Other">
+      <label for="other">Other</label><br>
+      <p>Any comments or suggestions?</p>
+      <textarea id="message" name="message" rows="10" cols="30"></textarea><br><br>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+
+  </body>
+</html>
